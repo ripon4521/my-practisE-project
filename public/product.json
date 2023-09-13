@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "product_name": "Tablet",
+        "product_title": "Samsung Galaxy Tab S7",
+        "product_description": "10.5-inch Android tablet with a Snapdragon 865+ processor, S Pen included, and stunning AMOLED display.",
+        "price": "$649.99",
+        "product_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0IKjUGqT36_oyS3iu5gulAb-BMD_0_znKlnfZNKkH-5_lTRR_UjN8tfpff4f2zpq7cyo&usqp=CAU"
+    },
+    {
+        "id": 2,
+        "product_name": "Refrigerator",
+        "product_title": "LG French Door Refrigerator",
+        "product_description": "Large capacity refrigerator with smart features, ice and water dispenser, and energy-efficient design.",
+        "price": "$1,799.00",
+        "product_img": "data:image/jpeg;base64,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"
+    },
+    {
+        "id": 3,
+        "product_name": "Gaming Laptop",
+        "product_title": "ASUS ROG Zephyrus G14",
+        "product_description": "High-performance gaming laptop with AMD Ryzen 9 processor, NVIDIA RTX 3060 graphics, and QHD display.",
+        "price": "$1,499.99",
+        "product_img": "https://www.custommacbd.com/cdn/shop/products/zephyrus-g14-01-500x500.jpg?v=1613634878"
+    },
+    {
+        "id": 4,
+        "product_name": "Digital Camera",
+        "product_title": "Sony Alpha 7 III",
+        "product_description": "Full-frame mirrorless camera with 24.2MP sensor, 4K video recording, and excellent low-light performance.",
+        "price": "$1,999.00",
+        "product_img": "https://digitalshopbd.com/public/uploads/all/gBXt0xEDey8FJjwyfrMf7zgK9LSdbZcAmHm0zqZu.jpg"
+    },
+    {
+        "id": 5,
+        "product_name": "Wireless Earbuds",
+        "product_title": "Apple AirPods Pro",
+        "product_description": "Premium wireless earbuds with active noise cancellation, spatial audio, and water-resistant design.",
+        "price": "$249.00",
+        "product_img": "https://www.custommacbd.com/cdn/shop/products/MWP22.jpg?v=1622172977"
+    },
+    {
+        "id": 6,
+        "product_name": "Smart TV",
+        "product_title": "Sony Bravia OLED A8H",
+        "product_description": "55-inch 4K OLED TV with Dolby Vision, Acoustic Surface Audio, and Android TV platform.",
+        "price": "$1,799.99",
+        "product_img": "https://static.clickbd.com/global/classified/item_img/2816246_0_original.jpgg"
+    },
+    {
+        "id": 7,
+        "product_name": "Coffee Maker",
+        "product_title": "Keurig K-Elite",
+        "product_description": "Single-serve coffee maker with strong brew setting, iced coffee option, and a large water reservoir.",
+        "price": "$129.99",
+        "product_img": "https://m.media-amazon.com/images/I/718uachj6aL.jpg"
+    },
+    {
+        "id": 8,
+        "product_name": "Sneakers",
+        "product_title": "Adidas Ultraboost 21",
+        "product_description": "Comfortable and stylish running sneakers with responsive cushioning and a breathable knit upper.",
+        "price": "$180.00",
+        "product_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBAj_HfgDdd5RXYe8C5RZVIs3HDZqR0-aF4Q&usqp=CAU"
+    },
+    {
+        "id": 9,
+        "product_name": "Backpack",
+        "product_title": "Osprey Atmos AG 65",
+        "product_description": "Highly adjustable hiking backpack with anti-gravity suspension system and ample storage capacity.",
+        "price": "$270.00",
+        "product_img": "https://images-na.ssl-images-amazon.com/images/I/51MHzDC90gL._AC_UL600_SR600,600_.jpg"
+    },
+    {
+        "id": 10,
+        "product_name": "Monitor",
+        "product_title": "Dell UltraSharp U2719D",
+        "product_description": "27-inch QHD IPS monitor with ultra-thin bezels, ergonomic stand, and accurate color reproduction.",
+        "price": "$349.99",
+        "product_img": "https://m.media-amazon.com/images/I/71UVQ7d0hgL.jpg"
+    },
+    {
+        "id": 11,
+        "product_name": "Microwave Oven",
+        "product_title": "Panasonic NN-SN966S",
+        "product_description": "Countertop microwave with inverter technology, 2.2 cu ft capacity, and 1250 watts of power.",
+        "price": "$219.95",
+        "product_img": "data:image/jpeg;base64,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"
+    },
+    {
+        "id": 12,
+        "product_name": "Smart Speaker",
+        "product_title": "Amazon Echo Show 10",
+        "product_description": "Smart speaker with a rotating screen, Alexa voice assistant, and video calling capabilities.",
+        "price": "$249.99",
+        "product_img": "https://cdn.mos.cms.futurecdn.net/btDouys2jVZUvMTw4LhLGH.jpg"
+    }
+]
