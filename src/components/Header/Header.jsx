@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const Header = ({item}) => {
+const Header = ({item,removetoLs}) => {
   const [total, setTotal]=useState(0)
   useEffect(()=>{
     const total = item.reduce((sum , e) =>parseFloat(e.price?.split('$')[1]) + sum,0);
@@ -8,6 +8,7 @@ const Header = ({item}) => {
     setTotal(total)
   },[item])
   
+
   
   console.log(item);
   // const {product_title} = item;
@@ -46,7 +47,7 @@ const Header = ({item}) => {
           }
           <span className="text-info">Subtotal:{total} $</span>
           <div className="card-actions">
-            <button className="btn btn-primary btn-block">View cart</button>
+            <button onClick={removetoLs} className="btn btn-primary btn-block">Remove Card</button>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../Header/Header';
 import { data } from 'autoprefixer';
+import { addToLs, getStoreItem,removecartItem} from "../../Uitilitis/LocalStorage";
 
 const Card = () => {
     const [cards ,setCards]=useState([]);
@@ -11,17 +12,40 @@ const Card = () => {
         .then(data=>setCards(data))
     },[])
 
+    useEffect(()=>{
+      if (cards.length>0) {
+        const storedItem = getStoreItem();
+        const savedCart = [];
+        for (const id of storedItem) {
+          console.log(id);
+          const findcard = cards.find(card =>card.id===id)
+          if (findcard) {
+              savedCart.push(findcard);
+          }
+      }
+      setItem(savedCart)
+      }
+    },[cards])
+
     const handleBuyNow =product=>{
         const newItem =[...item,product]
        
         setItem(newItem)
+        addToLs(product.id)
+    }
+
+    const removetoLs =id=>{
+      // console.log('removed');
+      const reaming =[];
+      setItem(reaming)
+      removecartItem(id)
     }
     // console.log(item);
 
 
     return (
         <div>
-            <Header item={item}></Header>
+            <Header item={item} removetoLs={removetoLs} ></Header>
             <h1 className='mt-10 text-2xl font-bold'>All Products:{cards.length}</h1>
             <div className='grid grid-cols-3 gap-4 mt-10 ml-14'>
                 {
