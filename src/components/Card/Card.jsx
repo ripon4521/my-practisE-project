@@ -13,8 +13,11 @@ const Card = () => {
 
     const handleBuyNow =product=>{
         const newItem =[...item,product]
+       
         setItem(newItem)
     }
+    // console.log(item);
+
 
     return (
         <div>
@@ -22,7 +25,7 @@ const Card = () => {
             <h1 className='mt-10 text-2xl font-bold'>All Products:{cards.length}</h1>
             <div className='grid grid-cols-3 gap-4 mt-10 ml-14'>
                 {
-                    cards.map(card=><div>
+                    cards.map(card=><div key={card.id}>
                                 <div className="card w-96 bg-base-100 shadow-xl">
   <figure className="px-10 pt-10">
     <img src={card.product_img} alt="Shoes" className="rounded-xl h-[200px]" />

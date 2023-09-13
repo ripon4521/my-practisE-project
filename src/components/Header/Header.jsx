@@ -1,4 +1,16 @@
+import { useEffect, useState } from "react";
+
 const Header = ({item}) => {
+  const [total, setTotal]=useState(0)
+  useEffect(()=>{
+    const total = item.reduce((sum , e) =>parseFloat(e.price?.split('$')[1]) + sum,0);
+    console.log(total);
+    setTotal(total)
+  },[item])
+  
+  
+  console.log(item);
+  const {product_title} = item;
   // console.log(CartsItem);
   return <div>
         <div className="navbar bg-base-300 rounded mt-5">
@@ -24,7 +36,7 @@ const Header = ({item}) => {
       <div tabIndex={0} className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
         <div className="card-body">
           <span className="font-bold text-lg">{item.length} Items</span>
-          <span className="text-info">Subtotal: 900$</span>
+          <span className="text-info">Subtotal:{total} {product_title}</span>
           <div className="card-actions">
             <button className="btn btn-primary btn-block">View cart</button>
           </div>
