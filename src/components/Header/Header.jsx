@@ -10,7 +10,7 @@ const Header = ({item}) => {
   
   
   console.log(item);
-  const {product_title} = item;
+  // const {product_title} = item;
   // console.log(CartsItem);
   return <div>
         <div className="navbar bg-base-300 rounded mt-5">
@@ -36,7 +36,15 @@ const Header = ({item}) => {
       <div tabIndex={0} className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
         <div className="card-body">
           <span className="font-bold text-lg">{item.length} Items</span>
-          <span className="text-info">Subtotal:{total} {product_title}</span>
+          {
+            item.map(pd=>
+              <div className="flex items-center"><h1 className="flex-1">{pd.product_name}</h1>
+              <img className="w-10 flex-1" src={pd.product_img} alt="" />
+              </div>
+              
+            )
+          }
+          <span className="text-info">Subtotal:{total} $</span>
           <div className="card-actions">
             <button className="btn btn-primary btn-block">View cart</button>
           </div>
