@@ -3,17 +3,24 @@ import Header from '../Header/Header';
 import { data } from 'autoprefixer';
 
 const Card = () => {
-    const [cards ,setCards]=useState([])
+    const [cards ,setCards]=useState([]);
+    const [item,setItem]=useState([])
     useEffect(()=>{
         fetch('./product.json')
         .then(res => res.json())
         .then(data=>setCards(data))
     },[])
+
+    const handleBuyNow =product=>{
+        const newItem =[...item,product]
+        setItem(newItem)
+    }
+
     return (
         <div>
-            <Header></Header>
+            <Header item={item}></Header>
             <h1 className='mt-10 text-2xl font-bold'>All Products:{cards.length}</h1>
-            <div className='grid grid-cols-3 gap-4 mt-10'>
+            <div className='grid grid-cols-3 gap-4 mt-10 ml-14'>
                 {
                     cards.map(card=><div>
                                 <div className="card w-96 bg-base-100 shadow-xl">
@@ -24,7 +31,7 @@ const Card = () => {
     <h2 className="card-title">{card.product_title}</h2>
     <p>{card.product_description}</p>
     <div className="card-actions items-center">
-      <button className="btn btn-primary">Buy Now</button>
+      <button onClick={()=>handleBuyNow(card)} className="btn btn-primary">Buy Now</button>
       <h1 className='text-2xl'>Price: {card.price}</h1>
     </div>
   </div>
